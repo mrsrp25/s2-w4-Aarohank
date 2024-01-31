@@ -27,4 +27,11 @@ public class Player {
 	
 	public void remember (boolean opponentChoice) {		
 	}
+
+	public String toString(){
+		return "Players" + this.score();
+	} 
+	public int compareTo(Player other){
+      return this.score() - other.score();
+	}
 }
